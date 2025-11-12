@@ -39,15 +39,15 @@ The notebook walks through a complete ML workflow, from data preprocessing and f
 
 | Model | Mean RMSE (log) | Remarks |
 |--------|------------------|----------|
-| Linear Regression | ~0.146 | Baseline |
-| Ridge Regression | ~0.138 | Improved generalization |
-| Lasso Regression | ~0.134 | Feature selection benefit |
-| Random Forest | ~0.128 | Good but prone to overfitting |
-| **Gradient Boosting** | **~0.121** | ✅ Best performing |
-| Support Vector Machine | ~0.140 | Sensitive to scaling |
-| K-Neighbors Regressor | ~0.150 | Weak generalization |
+| Linear Regression | ~0.151 | Baseline |
+| Ridge Regression | ~0.147 | Improved generalization |
+| Lasso Regression | ~0.399 | High RMSE; aggressive feature selection may have removed important predictors |
+| Random Forest | ~0.141 | Good but prone to overfitting |
+| **Gradient Boosting** | **~0.134** | ✅ Best performing |
+| Support Vector Machine | ~0.143 | Performs well with proper scaling; moderately sensitive to hyperparameters |
+| K-Neighbors Regressor | ~0.170 | Weak generalization |
 
-**Validation RMSE (real prices):** ≈ **24,000–25,000**
+**Validation RMSE (real prices):** ≈ **$30,052.62**
 
 ✅ *Gradient Boosting Regressor selected as final model.*
 
